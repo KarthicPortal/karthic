@@ -98,7 +98,7 @@ const WEBSITE_CONFIG = {
                 {
                     name: "Certifications",
                     skills: [
-                        { name: "CKA: Certified Kubernetes Administrator", icon: "fas fa-certificate" },
+                        { name: "CKA: Certified Kubernetes Administrator", icon: "icons/cka.svg" },
                         { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "icons/azure-expert.svg" },
                         { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "icons/azure-associate.svg" },
                         { name: "AZ-104: Azure Administrator Associate", icon: "icons/azure-associate.svg" },
