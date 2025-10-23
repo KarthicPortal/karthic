@@ -357,22 +357,35 @@ class WebsiteManager {
     initializeTypingAnimation() {
         const heroTitle = document.querySelector('.hero-title');
         if (heroTitle) {
-            const originalText = heroTitle.innerHTML;
+            // Store the original HTML content
+            const originalHTML = heroTitle.innerHTML;
+            // Get the plain text content for typing animation
+            const plainText = heroTitle.textContent;
+            
+            // Clear the content and start typing animation
+            heroTitle.textContent = '';
+            
             setTimeout(() => {
-                this.typeWriter(heroTitle, originalText, 50);
+                this.typeWriter(heroTitle, plainText, 50, originalHTML);
             }, 500);
         }
     }
 
-    typeWriter(element, text, speed = 100) {
+    typeWriter(element, text, speed = 100, originalHTML = null) {
         let i = 0;
-        element.innerHTML = '';
         
         function type() {
             if (i < text.length) {
-                element.innerHTML += text.charAt(i);
+                element.textContent += text.charAt(i);
                 i++;
                 setTimeout(type, speed);
+            } else {
+                // After typing is complete, restore the original HTML structure
+                if (originalHTML) {
+                    setTimeout(() => {
+                        element.innerHTML = originalHTML;
+                    }, 1000);
+                }
             }
         }
         
@@ -449,9 +462,7 @@ class WebsiteManager {
 
 // Initialize the website when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Disabled WebsiteManager to prevent character duplication
-    // Static HTML content is already properly structured
-    // new WebsiteManager();
+    new WebsiteManager();
 });
 
 // Legacy code for backward compatibility
@@ -653,46 +664,11 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Typing animation for hero title
-function typeWriter(element, text, speed = 100, originalHTML = null) {
-    let i = 0;
-    
-    function type() {
-        if (i < text.length) {
-            element.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        } else {
-            // After typing is complete, restore the original HTML structure
-            if (originalHTML) {
-                setTimeout(() => {
-                    element.innerHTML = originalHTML;
-                }, 1000);
-            }
-        }
-    }
-    
-    type();
-}
+// Typing animation is now handled by WebsiteManager
+// Removed standalone typeWriter function to prevent conflicts
 
-// Initialize typing animation when page loads
-document.addEventListener('DOMContentLoaded', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        // Store the original HTML content
-        const originalHTML = heroTitle.innerHTML;
-        // Get the plain text content for typing animation
-        const plainText = heroTitle.textContent;
-        
-        // Clear the content and start typing animation
-        heroTitle.textContent = '';
-        
-        // Delay the typing animation slightly
-        setTimeout(() => {
-            typeWriter(heroTitle, plainText, 50, originalHTML);
-        }, 500);
-    }
-});
+// Typing animation is now handled by WebsiteManager
+// Removed duplicate typing animation to prevent conflicts
 
 // Parallax effect for hero section
 window.addEventListener('scroll', () => {

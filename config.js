@@ -102,7 +102,6 @@ const WEBSITE_CONFIG = {
                         { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "icons/azure-expert.svg" },
                         { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "icons/azure-associate.svg" },
                         { name: "AZ-104: Azure Administrator Associate", icon: "icons/azure-associate.svg" },
-                        { name: "'DevOps Expert' badge from Microsoft", icon: "fas fa-award" }
                     ]
                 }
             ]
