@@ -68,40 +68,40 @@ const WEBSITE_CONFIG = {
                 {
                     name: "Infrastructure as Code",
                     skills: [
-                        { name: "Terraform", icon: "fab fa-terraform" },
-                        { name: "Ansible", icon: "fab fa-ansible" },
+                        { name: "Terraform", icon: "icons/terraform.svg" },
+                        { name: "Ansible", icon: "icons/ansible.svg" },
                         { name: "ARM templates", icon: "fas fa-file-code" },
-                        { name: "Bicep", icon: "fas fa-file-code" }
+                        { name: "Bicep", icon: "icons/bicep.svg" }
                     ]
                 },
                 {
                     name: "Scripting Languages",
                     skills: [
                         { name: "Bash", icon: "fas fa-terminal" },
-                        { name: "PowerShell", icon: "fab fa-windows" },
-                        { name: "Python", icon: "fab fa-python" },
-                        { name: "TypeScript", icon: "fas fa-code" },
-                        { name: "Perl", icon: "fas fa-code" }
+                        { name: "PowerShell", icon: "icons/powershell.svg" },
+                        { name: "Python", icon: "icons/python.svg" },
+                        { name: "TypeScript", icon: "icons/typescript.svg" },
+                        { name: "Perl", icon: "icons/perl.svg" }
                     ]
                 },
                 {
                     name: "Tools & Others",
                     skills: [
-                        { name: "Docker", icon: "fab fa-docker" },
-                        { name: "Kubernetes", icon: "fab fa-kubernetes" },
-                        { name: "Azure", icon: "fab fa-microsoft" },
-                        { name: "Databricks", icon: "fas fa-database" },
-                        { name: "GitHub", icon: "fab fa-github" },
-                        { name: "Azure DevOps", icon: "fab fa-microsoft" }
+                        { name: "Docker", icon: "icons/docker.svg" },
+                        { name: "Kubernetes", icon: "icons/kubernetes.svg" },
+                        { name: "Azure", icon: "icons/azure.svg" },
+                        { name: "Databricks", icon: "icons/databricks.svg" },
+                        { name: "GitHub", icon: "icons/github.svg" },
+                        { name: "Azure DevOps", icon: "icons/azure-devops.svg" }
                     ]
                 },
                 {
                     name: "Certifications",
                     skills: [
                         { name: "CKA: Certified Kubernetes Administrator", icon: "fas fa-certificate" },
-                        { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "fas fa-certificate" },
-                        { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "fas fa-certificate" },
-                        { name: "AZ-104: Azure Administrator Associate", icon: "fas fa-certificate" },
+                        { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "icons/azure-expert.svg" },
+                        { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "icons/azure-associate.svg" },
+                        { name: "AZ-104: Azure Administrator Associate", icon: "icons/azure-associate.svg" },
                         { name: "'DevOps Expert' badge from Microsoft", icon: "fas fa-award" }
                     ]
                 }
