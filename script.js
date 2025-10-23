@@ -656,11 +656,11 @@ document.head.appendChild(style);
 // Typing animation for hero title
 function typeWriter(element, text, speed = 100) {
     let i = 0;
-    element.innerHTML = '';
+    element.textContent = ''; // Use textContent to avoid HTML interpretation
     
     function type() {
         if (i < text.length) {
-            element.innerHTML += text.charAt(i);
+            element.textContent += text.charAt(i);
             i++;
             setTimeout(type, speed);
         } else {
@@ -791,7 +791,7 @@ console.log(`
    
    Feel free to explore the code and reach out if you have any questions!
    
-   Contact: karthic@example.com
+   Contact: karthic.ceg@gmail.com
 `);
 
 // Performance monitoring
