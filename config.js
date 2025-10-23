@@ -52,12 +52,12 @@ const WEBSITE_CONFIG = {
             enabled: true,
             title: "About Me",
             content: [
-                "I'm a passionate about technologies and innovation with a love for creating meaningful digital experiences. With expertise in modern web technologies, I enjoy building applications that make a difference.",
+                "I'm a passionate about technologies and innovation with a love for creating meaningful digital experiences. With expertise in modern cloud technologies, I enjoy consulting and helping building applications that make a difference.",
                 "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
             ],
             stats: [
-                { value: "50+", label: "Projects Completed" },
-                { value: "3+", label: "Years Experience" },
+                { value: "20+", label: "Projects Completed" },
+                { value: "15+", label: "Years Experience" },
                 { value: "100%", label: "Client Satisfaction" }
             ]
         },
@@ -68,17 +68,17 @@ const WEBSITE_CONFIG = {
                 {
                     name: "Infrastructure as Code",
                     skills: [
-                        { name: "Terraform", icon: "fas fa-mountain" },
-                        { name: "Ansible", icon: "fas fa-cogs" },
-                        { name: "ARM templates", icon: "fab fa-microsoft" },
-                        { name: "Bicep", icon: "fas fa-code" }
+                        { name: "Terraform", icon: "fas fa-code" },
+                        { name: "Ansible", icon: "fas fa-tools" },
+                        { name: "ARM templates", icon: "fas fa-file-code" },
+                        { name: "Bicep", icon: "fas fa-file-code" }
                     ]
                 },
                 {
                     name: "Scripting Languages",
                     skills: [
                         { name: "Bash", icon: "fas fa-terminal" },
-                        { name: "PowerShell", icon: "fab fa-microsoft" },
+                        { name: "PowerShell", icon: "fas fa-terminal" },
                         { name: "Python", icon: "fab fa-python" },
                         { name: "TypeScript", icon: "fab fa-js-square" },
                         { name: "Perl", icon: "fas fa-code" }
@@ -88,11 +88,11 @@ const WEBSITE_CONFIG = {
                     name: "Tools & Others",
                     skills: [
                         { name: "Docker", icon: "fab fa-docker" },
-                        { name: "Kubernetes", icon: "fas fa-kubernetes" },
-                        { name: "Azure", icon: "fab fa-azure" },
+                        { name: "Kubernetes", icon: "fas fa-network-wired" },
+                        { name: "Azure", icon: "fas fa-cloud" },
                         { name: "Databricks", icon: "fas fa-database" },
                         { name: "GitHub", icon: "fab fa-github" },
-                        { name: "Azure DevOps", icon: "fab fa-microsoft" }
+                        { name: "Azure DevOps", icon: "fas fa-project-diagram" }
                     ]
                 },
                 {
