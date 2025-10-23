@@ -40,9 +40,9 @@ const WEBSITE_CONFIG = {
     sections: {
         home: {
             enabled: true,
-            title: "Hi, I'm <span class='highlight'>Karthic</span>",
-            subtitle: "Passionate Developer & Problem Solver",
-            description: "I love creating innovative solutions and turning ideas into reality through code. Welcome to my digital space where creativity meets technology.",
+            title: "Hi, I'm <span class='highlight'>Karthic Ganesan</span>",
+            subtitle: "Cloud/Platform/DevSecOps Engineer & Problem Solver",
+            description: "I love provisioning innovative infrastructure solutions and turning ideas into reality through code. Welcome to my digital space where creativity meets technology.",
             buttons: [
                 { text: "View My Work", href: "#projects", class: "btn-primary" },
                 { text: "Get In Touch", href: "#contact", class: "btn-secondary" }
@@ -52,7 +52,7 @@ const WEBSITE_CONFIG = {
             enabled: true,
             title: "About Me",
             content: [
-                "I'm a passionate developer with a love for creating meaningful digital experiences. With expertise in modern web technologies, I enjoy building applications that make a difference.",
+                "I'm a passionate about technologies and innovation with a love for creating meaningful digital experiences. With expertise in modern web technologies, I enjoy building applications that make a difference.",
                 "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
             ],
             stats: [
@@ -66,31 +66,43 @@ const WEBSITE_CONFIG = {
             title: "Skills & Technologies",
             categories: [
                 {
-                    name: "Frontend Development",
+                    name: "Infrastructure as Code",
                     skills: [
-                        { name: "HTML5", icon: "fab fa-html5" },
-                        { name: "CSS3", icon: "fab fa-css3-alt" },
-                        { name: "JavaScript", icon: "fab fa-js-square" },
-                        { name: "React", icon: "fab fa-react" },
-                        { name: "Vue.js", icon: "fab fa-vue" }
+                        { name: "Terraform", icon: "fas fa-mountain" },
+                        { name: "Ansible", icon: "fas fa-cogs" },
+                        { name: "ARM templates", icon: "fab fa-microsoft" },
+                        { name: "Bicep", icon: "fas fa-code" }
                     ]
                 },
                 {
-                    name: "Backend Development",
+                    name: "Scripting Languages",
                     skills: [
-                        { name: "Node.js", icon: "fab fa-node-js" },
+                        { name: "Bash", icon: "fas fa-terminal" },
+                        { name: "PowerShell", icon: "fab fa-microsoft" },
                         { name: "Python", icon: "fab fa-python" },
-                        { name: "MongoDB", icon: "fas fa-database" },
-                        { name: "Express.js", icon: "fas fa-server" }
+                        { name: "TypeScript", icon: "fab fa-js-square" },
+                        { name: "Perl", icon: "fas fa-code" }
                     ]
                 },
                 {
                     name: "Tools & Others",
                     skills: [
-                        { name: "Git", icon: "fab fa-git-alt" },
                         { name: "Docker", icon: "fab fa-docker" },
-                        { name: "AWS", icon: "fab fa-aws" },
-                        { name: "Linux", icon: "fas fa-terminal" }
+                        { name: "Kubernetes", icon: "fas fa-kubernetes" },
+                        { name: "Azure", icon: "fab fa-azure" },
+                        { name: "Databricks", icon: "fas fa-database" },
+                        { name: "GitHub", icon: "fab fa-github" },
+                        { name: "Azure DevOps", icon: "fab fa-microsoft" }
+                    ]
+                },
+                {
+                    name: "Certifications",
+                    skills: [
+                        { name: "CKA: Certified Kubernetes Administrator", icon: "fas fa-certificate" },
+                        { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "fab fa-microsoft" },
+                        { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "fab fa-microsoft" },
+                        { name: "AZ-104: Azure Administrator Associate", icon: "fab fa-microsoft" },
+                        { name: "'DevOps Expert' badge from Microsoft", icon: "fas fa-award" }
                     ]
                 }
             ]
@@ -156,9 +168,9 @@ const WEBSITE_CONFIG = {
             title: "Get In Touch",
             description: "I'm always interested in new opportunities and exciting projects. Feel free to reach out if you'd like to collaborate or just say hello.",
             methods: [
-                { type: "Email", value: "karthic@example.com", icon: "fas fa-envelope" },
-                { type: "LinkedIn", value: "linkedin.com/in/karthic", icon: "fab fa-linkedin" },
-                { type: "GitHub", value: "github.com/karthic", icon: "fab fa-github" }
+                { type: "Email", value: "karthic.ceg@gmail.com", icon: "fas fa-envelope" },
+                { type: "LinkedIn", value: "in.linkedin.com/in/karthic-ganesan-a610b7a", icon: "fab fa-linkedin" },
+                { type: "GitHub", value: "github.com/karthicportal", icon: "fab fa-github" }
             ]
         }
     },
@@ -173,10 +185,10 @@ const WEBSITE_CONFIG = {
 
     // Social Links
     social: {
-        github: "https://github.com/karthic",
-        linkedin: "https://linkedin.com/in/karthic",
+        github: "https://github.com/karthicportal",
+        linkedin: "https://in.linkedin.com/in/karthic-ganesan-a610b7a",
         twitter: "https://twitter.com/karthic",
-        email: "mailto:karthic@example.com"
+        email: "mailto:karthic.ceg@gmail.com"
     },
 
     // SEO Configuration
