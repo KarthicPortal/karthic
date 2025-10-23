@@ -654,9 +654,8 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Typing animation for hero title
-function typeWriter(element, text, speed = 100) {
+function typeWriter(element, text, speed = 100, originalHTML = null) {
     let i = 0;
-    element.textContent = ''; // Use textContent to avoid HTML interpretation
     
     function type() {
         if (i < text.length) {
@@ -664,10 +663,12 @@ function typeWriter(element, text, speed = 100) {
             i++;
             setTimeout(type, speed);
         } else {
-            // After typing is complete, restore the HTML structure
-            setTimeout(() => {
-                element.innerHTML = 'Hi, I\'m <span class="highlight">Karthic✌️</span>';
-            }, 1000);
+            // After typing is complete, restore the original HTML structure
+            if (originalHTML) {
+                setTimeout(() => {
+                    element.innerHTML = originalHTML;
+                }, 1000);
+            }
         }
     }
     
@@ -678,11 +679,17 @@ function typeWriter(element, text, speed = 100) {
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        // Get the text content without HTML tags for typing animation
-        const originalText = heroTitle.textContent;
+        // Store the original HTML content
+        const originalHTML = heroTitle.innerHTML;
+        // Get the plain text content for typing animation
+        const plainText = heroTitle.textContent;
+        
+        // Clear the content and start typing animation
+        heroTitle.textContent = '';
+        
         // Delay the typing animation slightly
         setTimeout(() => {
-            typeWriter(heroTitle, originalText, 50);
+            typeWriter(heroTitle, plainText, 50, originalHTML);
         }, 500);
     }
 });
