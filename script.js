@@ -449,7 +449,9 @@ class WebsiteManager {
 
 // Initialize the website when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    new WebsiteManager();
+    // Disabled WebsiteManager to prevent character duplication
+    // Static HTML content is already properly structured
+    // new WebsiteManager();
 });
 
 // Legacy code for backward compatibility
