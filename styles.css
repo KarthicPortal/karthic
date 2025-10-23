@@ -458,23 +458,32 @@ section {
     padding: 5rem 0;
 }
 
-.projects-section .project-content {
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
     background: white;
     border-radius: 15px;
-    padding: 2rem;
-    margin-bottom: 2rem;
+    overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e5e7eb;
 }
 
-.projects-section .project-content:hover {
+.project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
+.projects-section .project-content {
+    padding: 2rem;
+}
+
 .projects-section .project-content h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #1f2937;
@@ -484,7 +493,7 @@ section {
     color: #6b7280;
     margin-bottom: 1.5rem;
     line-height: 1.6;
-    font-size: 1rem;
+    font-size: 0.95rem;
 }
 
 .project-tech {
