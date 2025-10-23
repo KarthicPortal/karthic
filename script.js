@@ -663,6 +663,11 @@ function typeWriter(element, text, speed = 100) {
             element.innerHTML += text.charAt(i);
             i++;
             setTimeout(type, speed);
+        } else {
+            // After typing is complete, restore the HTML structure
+            setTimeout(() => {
+                element.innerHTML = 'Hi, I\'m <span class="highlight">Karthic✌️</span>';
+            }, 1000);
         }
     }
     
@@ -673,7 +678,8 @@ function typeWriter(element, text, speed = 100) {
 document.addEventListener('DOMContentLoaded', () => {
     const heroTitle = document.querySelector('.hero-title');
     if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
+        // Get the text content without HTML tags for typing animation
+        const originalText = heroTitle.textContent;
         // Delay the typing animation slightly
         setTimeout(() => {
             typeWriter(heroTitle, originalText, 50);
