@@ -32,6 +32,10 @@ class WebsiteManager {
     }
 
     initializeNavigation() {
+        // Disabled dynamic navigation updates to prevent conflicts
+        // Static HTML navigation is already properly structured
+        return;
+        
         const subdomainConfig = SUBDOMAIN_CONFIGS?.[this.currentSubdomain] || {};
         const navItems = subdomainConfig.navigation || this.config.navigation?.main || [];
         
@@ -49,6 +53,10 @@ class WebsiteManager {
     }
 
     loadContent() {
+        // Disabled dynamic content loading to prevent character duplication
+        // Static HTML content is already properly structured
+        return;
+        
         const subdomainConfig = SUBDOMAIN_CONFIGS?.[this.currentSubdomain] || {};
         const sections = { ...this.config.sections, ...subdomainConfig.sections };
         
