@@ -40,7 +40,7 @@ const WEBSITE_CONFIG = {
     sections: {
         home: {
             enabled: true,
-            title: "Hi, I'm <span class='highlight'>Karthic Ganesan</span>",
+            title: "Hi, I'm <span class='highlight'>Karthic ✌️</span>",
             subtitle: "Cloud/Platform/DevSecOps Engineer & Problem Solver",
             description: "I love innovative infrastructure solutions and turning ideas into reality through code. Welcome to my digital space where creativity meets technology.",
             buttons: [

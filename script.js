@@ -24,6 +24,10 @@ class WebsiteManager {
     }
 
     updatePageMeta() {
+        // Disabled dynamic page meta updates to prevent character duplication
+        // Static HTML content is already properly structured
+        return;
+        
         const subdomainConfig = SUBDOMAIN_CONFIGS?.[this.currentSubdomain] || {};
         const config = { ...this.config, ...subdomainConfig };
         
@@ -98,6 +102,10 @@ class WebsiteManager {
     }
 
     loadHomeSection(section) {
+        // Disabled dynamic home section updates to prevent character duplication
+        // Static HTML content is already properly structured
+        return;
+        
         const titleElement = document.querySelector('.hero-title');
         const subtitleElement = document.querySelector('.hero-subtitle');
         const descriptionElement = document.querySelector('.hero-description');
@@ -120,6 +128,10 @@ class WebsiteManager {
     }
 
     loadAboutSection(section) {
+        // Disabled dynamic about section updates to prevent character duplication
+        // Static HTML content is already properly structured
+        return;
+        
         const aboutText = document.querySelector('.about-text');
         const statsContainer = document.querySelector('.about-stats');
 
@@ -140,6 +152,9 @@ class WebsiteManager {
     }
 
     loadSkillsSection(section) {
+        // Disabled dynamic skills section updates to prevent character duplication
+        // Static HTML content is already properly structured
+        return;
         const skillsGrid = document.querySelector('.skills-grid');
         
         if (skillsGrid && section.categories) {
@@ -193,6 +208,9 @@ class WebsiteManager {
     }
 
     loadContactSection(section) {
+        // Disabled dynamic contact section updates to prevent character duplication
+        // Static HTML content is already properly structured
+        return;
         const contactMethods = document.querySelector('.contact-methods');
         
         if (contactMethods && section.methods) {
