@@ -436,61 +436,55 @@ section {
     color: white;
 }
 
+.skill-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover .skill-icon {
+    filter: brightness(0) invert(1);
+}
+
 .skill-item span {
     font-weight: 500;
     font-size: 0.9rem;
 }
 
 /* Projects Section */
-.projects {
+.projects-section {
     background: #f8fafc;
+    padding: 5rem 0;
 }
 
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.project-card {
+.projects-section .project-content {
     background: white;
     border-radius: 15px;
-    overflow: hidden;
+    padding: 2rem;
+    margin-bottom: 2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #e5e7eb;
 }
 
-.project-card:hover {
+.projects-section .project-content:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 
-.project-image {
-    height: 200px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3rem;
-    color: white;
-}
-
-.project-content {
-    padding: 1.5rem;
-}
-
-.project-content h3 {
-    font-size: 1.3rem;
+.projects-section .project-content h3 {
+    font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
     color: #1f2937;
 }
 
-.project-content p {
+.projects-section .project-content p {
     color: #6b7280;
     margin-bottom: 1.5rem;
     line-height: 1.6;
+    font-size: 1rem;
 }
 
 .project-tech {

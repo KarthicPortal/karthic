@@ -3,8 +3,8 @@ const WEBSITE_CONFIG = {
     // Site Information
     site: {
         title: "Karthic - Personal Portfolio",
-        description: "Passionate Developer & Problem Solver",
-        author: "Karthic",
+        description: "Cloud, Platform, DevSecOps Engineer & Problem Solver",
+        author: "Karthic Ganesan",
         domain: "karthic.is-a.dev",
         subdomain: window.location.hostname.split('.')[0] || 'main'
     },
@@ -42,7 +42,7 @@ const WEBSITE_CONFIG = {
             enabled: true,
             title: "Hi, I'm <span class='highlight'>Karthic Ganesan</span>",
             subtitle: "Cloud/Platform/DevSecOps Engineer & Problem Solver",
-            description: "I love provisioning innovative infrastructure solutions and turning ideas into reality through code. Welcome to my digital space where creativity meets technology.",
+            description: "I love innovative infrastructure solutions and turning ideas into reality through code. Welcome to my digital space where creativity meets technology.",
             buttons: [
                 { text: "View My Work", href: "#projects", class: "btn-primary" },
                 { text: "Get In Touch", href: "#contact", class: "btn-secondary" }
@@ -52,7 +52,7 @@ const WEBSITE_CONFIG = {
             enabled: true,
             title: "About Me",
             content: [
-                "I'm a passionate about technologies and innovation with a love for creating meaningful digital experiences. With expertise in modern cloud technologies, I enjoy consulting and helping building applications that make a difference.",
+                "I'm a passionate about technologies and innovation with a love for creating meaningful digital experiences. With expertise in modern cloud technologies, I enjoy consulting and helping to build applications that make a difference.",
                 "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or sharing knowledge with the developer community."
             ],
             stats: [
@@ -68,8 +68,8 @@ const WEBSITE_CONFIG = {
                 {
                     name: "Infrastructure as Code",
                     skills: [
-                        { name: "Terraform", icon: "fas fa-code" },
-                        { name: "Ansible", icon: "fas fa-tools" },
+                        { name: "Terraform", icon: "fab fa-terraform" },
+                        { name: "Ansible", icon: "fab fa-ansible" },
                         { name: "ARM templates", icon: "fas fa-file-code" },
                         { name: "Bicep", icon: "fas fa-file-code" }
                     ]
@@ -78,9 +78,9 @@ const WEBSITE_CONFIG = {
                     name: "Scripting Languages",
                     skills: [
                         { name: "Bash", icon: "fas fa-terminal" },
-                        { name: "PowerShell", icon: "fas fa-terminal" },
+                        { name: "PowerShell", icon: "fab fa-windows" },
                         { name: "Python", icon: "fab fa-python" },
-                        { name: "TypeScript", icon: "fab fa-js-square" },
+                        { name: "TypeScript", icon: "fas fa-code" },
                         { name: "Perl", icon: "fas fa-code" }
                     ]
                 },
@@ -88,20 +88,20 @@ const WEBSITE_CONFIG = {
                     name: "Tools & Others",
                     skills: [
                         { name: "Docker", icon: "fab fa-docker" },
-                        { name: "Kubernetes", icon: "fas fa-network-wired" },
-                        { name: "Azure", icon: "fas fa-cloud" },
+                        { name: "Kubernetes", icon: "fab fa-kubernetes" },
+                        { name: "Azure", icon: "fab fa-microsoft" },
                         { name: "Databricks", icon: "fas fa-database" },
                         { name: "GitHub", icon: "fab fa-github" },
-                        { name: "Azure DevOps", icon: "fas fa-project-diagram" }
+                        { name: "Azure DevOps", icon: "fab fa-microsoft" }
                     ]
                 },
                 {
                     name: "Certifications",
                     skills: [
                         { name: "CKA: Certified Kubernetes Administrator", icon: "fas fa-certificate" },
-                        { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "fab fa-microsoft" },
-                        { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "fab fa-microsoft" },
-                        { name: "AZ-104: Azure Administrator Associate", icon: "fab fa-microsoft" },
+                        { name: "AZ-400: Designing and Implementing Microsoft DevOps Solutions", icon: "fas fa-certificate" },
+                        { name: "AZ-204: Developing Solutions for Microsoft Azure", icon: "fas fa-certificate" },
+                        { name: "AZ-104: Azure Administrator Associate", icon: "fas fa-certificate" },
                         { name: "'DevOps Expert' badge from Microsoft", icon: "fas fa-award" }
                     ]
                 }
